@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animal Health Centre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="http:/css/main.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/map/maps/documentation/css">
+
+
+    <!--jquery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js">
+        < script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" >
+
+    </script>
+</head>
+<style>
+    #map {
+        height: 300px;
+        width: 400px;
+    }
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNav" aria-controls="topNav" aria-expanded="false">
+            <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+             </button>
+                <a class="navbar-brand" href="#">AnimaL Health Clinic</a>
+            </div>
+            <div class="collapse navbar-collapse" id="topNav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--navigation bar-->
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-12 " style="background-color:black; ">
+                <p></p>
+
+                <ul class="nav nav-pills nav-justified ">
+                    <li>
+                        <a href="destiny.html">ABOUT US</a>
+                    </li>
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle " data-toggle="dropdown " href="# ">GALLERY
+                            <span class="caret "></span>
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li>
+                                <a href="petgallery.html "></a>
+                            </li>
+                            <li>
+                                <a href="cats.html ">CATS</a>
+                            </li>
+                            <li>
+                                <a href="dogs.html ">DOGS</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="# ">ADOPTION</a>
+                    </li>
+                    <li>
+                        <a href="# ">PET ADVICE</a>
+                    </li>
+                    <li>
+                        <a href="mailto:animals2rescue1@gmail.com?Subject=Please%20ThankYou  ">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="api.html">FIND US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p></p>
+
+        <!--content sections-->
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-sm-3 col-md-2 ">
+                    <div class="left-content ">.col-sm-3 .col-md-2</div>
+                </div>
+                <div class="col-sm-9 col-md-8 ">
+                    <!-- col-sm-9 .col-md-8-->
+                    <i frame>
+                    <h2>Our Location</h2>
+                    <div id="map">
+                        <script>
+                            function initMap() {
+                                var uluru = {
+                                    lat: -54.97593,
+                                    lng: -1.607111
+                                };
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 4,
+                                    center: uluru
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: uluru,
+                                    map: map
+                                });
+                            }
+
+                        </script>
+                       
+                        
+                        
+                        
+                    </div>
+</i>
+                </div>
+                <div class="col-sm-12 col-md-2 ">
+                    <div class="left-content flexible ">.col-sm-12 .col-md-2</div>
+                </div>
+            </div>
+            <p></p>
+            <!--footer-->
+            <div class="navbar" id="bottomNavbar">
+                <div class="panel-footer">
+                    <!--Global Navigation-->
+                    <ul class="nav nav-pills " role="tablist ">
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="second-r ">Copyright
+                                    </a>
+                        </li>
+                        <li>
+                            <a href="#" class="second-r ">Animal Health Clinic
+                                    </a>
+                        </li>
+                        <li class="active ">
+                            <a href="http://www.facebook.com/Pet Care Clinic " target="_blank " title="Facebook ">
+                                <img src="images/facebook1.png " class="first-r " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com/Pet Care Clinic " target="_blank " title="Twitter ">
+                                <img src="images/twitter1.png " class="second-r " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.youtube.com/Pet Care Clinic " target="_blank " title="YouTube ">
+                                <img src="images/youtube.png " alt="images/youtube.png " class="third-r " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:animals2rescue1@gmail.com?Subject=Please%20ThankYou " target="_blank " title="Email ">
+                                <img src="images/mail.png " alt="mail.png " class="fourth-r " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="second-r ">Copyright
+                                    </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <p></p>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("bottomNavbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+
+        </script>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADAqLogwsB4Wa-9F_vTx8SV6gBMdT-KWM&callback=initMap">
+        https: //www.google.com/maps/embed/v1/MODE?key=YOUR_API_KEY&parameters
+
+    </script>
+
+</body>
+
+</html>
